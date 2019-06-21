@@ -1,0 +1,64 @@
+<!-- 首页轮播图分区 -->
+<view class='slider'>
+  <!-- indicator-dots：是否显示面板指示点
+  autoplay：是否自动切换
+  interval:自动切换时间间隔
+  duration:滑动动画时长 
+  circular:循环轮播-->
+  <swiper indicator-dots="{{ true }}" autoplay="{{ true }}" interval="5000" duration="2000" circular='{{ true }}'>
+    <swiper-item wx:for="{{sliderList}}">
+      <image src="{{item.image}}" class="slide-image" mode="aspectFill " />
+    </swiper-item>
+    </swiper>
+</view>
+<!-- 首页导航分区 -->
+<view class='index-nav '>
+  <navigator class='nav-item' url='/pages/shoplist/list'>
+    <image src='/assets/icons/grid-01(1).png' mode="aspectFill " ></image>
+    <text>美食</text>
+     
+  </navigator>
+  <navigator class='nav-item'>
+    <image src='/assets/icons/grid-02.png' mode="aspectFill "></image>
+    <text>结婚啦</text>
+  </navigator>
+  <navigator class='nav-item'>
+    <image src='/assets/icons/grid-03.png' mode="aspectFill "></image>
+    <text>卡拉OK</text>
+  </navigator>
+  <navigator class='nav-item'>
+    <image src='/assets/icons/grid-04.png'></image>
+    <text>找工作</text>
+  </navigator>
+  <navigator class='nav-item'>
+    <image src='/assets/icons/grid-05.png' mode="aspectFill "></image>
+    <text>辅导班</text>
+  </navigator>
+  <navigator class='nav-item'>
+    <image src='/assets/icons/grid-06.png'></image>
+    <text>汽车保养</text>
+  </navigator>
+  <navigator class='nav-item'>
+    <image src='/assets/icons/grid-07.png' mode="aspectFill "></image>
+    <text>租房</text>
+  </navigator>
+  <navigator class='nav-item'>
+    <image src='/assets/icons/grid-08.png' mode="aspectFill "></image>
+    <text>装修</text>
+  </navigator>
+  <navigator class='nav-item'>
+    <image src='/assets/icons/grid-09.png' mode="aspectFill "></image>
+    <text>更多</text>
+  </navigator>
+</view>
+<view class='divider'></view>
+
+<!-- 首页入口分区 -->
+<view class='index-enter '>
+  <navigator class='enter-item'>
+    <image src='/assets/images/link-01.png' mode='aspectFill'></image>
+  </navigator>
+  <navigator class='enter-item'>
+    <image src='/assets/images/link-02.png'></image>
+  </navigator>
+</view>

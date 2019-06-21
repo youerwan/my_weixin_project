@@ -1,0 +1,86 @@
+/* .bgw{
+  background-color: #fff;
+}
+.mt20{
+  margin-top: 20rpx;
+} */
+
+/* 间隔空间封装 */
+
+.divider {
+    height: 20rpx;
+    background-color: #f1f1f1;
+    box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, 0.1) inset;
+}
+
+/* 边框线封装
+ */
+
+.index-nav .nav-item::after {
+    content: "";
+    width: 1rpx;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #ccc;
+}
+
+/* 功能封装4：箭头 */
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow::after {
+    content: "";
+    width: 15rpx;
+    height: 15rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;
+    transform: rotate(45deg);
+}
+
+/* 功能封装5：水平垂直居中 */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 功能封装6：列表封装 */
+
+.cell {
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.cell-item {
+    border-bottom: 1rpx solid #ddd;
+    padding: 20rpx 30rpx;
+}
+
+
+
+/* 功能封装7：星星评分封装 */
+.star-after{
+    color: #e2e2e2;
+}
+.star-before{
+    color:#f19e38;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 90%;
+    overflow: hidden;
+}
+/* 功能封装8：单行超出宽度变省略号 */
+.ell{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
